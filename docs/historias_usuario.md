@@ -18,4 +18,4 @@ Como trabajador municipal, quiero ver el registro de incidencias.
 
 Criterios:
 - Las incidencias deben permanecer en la base de datos
-- Se debe contar con un solo botón "actualizar" para revisar las evidencias.
+- Se debe contar con un solo botón "actualizar" para revisar las evidencias..
