@@ -1,24 +1,24 @@
-# Arquitectura simple
+# Arquitectura del Sistema reportatucalle
 
-El proyecto usa una arquitectura por capas:
+Frontend y el backend separados para mantener el sistema más organizado. .
 
-- controller: recibe peticiones HTTP.
-- service: contiene la lógica principal.
-- dao: separa el acceso a datos.
-- model: clases guardadas en MongoDB.
-- observer: notifica cuando se registra una incidencia.
-- config: contiene el ejemplo Singleton de conexión.
+El frontend fue implementado usando HTML, CSS y JavaScript de manera simple. Desde ahí el usuario puede registrar incidencias urbanas como baches, basura, problemas de alumbrado o emergencias. Se hubiera deseado usar un framework para hacer más bonito el frontend pero por motivos de tiempo se concentro más en patrones de desarrollo.
 
-## Patrones usados
+El backend fue desarrollado con Spring Boot, maven y funciona mediante una API REST. El frontend envía peticiones HTTP al backend para registrar o consultar incidencias.
 
-### DAO
+La arquitectura del backend está dividida en varias capas:
 
-La interfaz IncidenciaDao define operaciones de acceso a datos. MongoIncidenciaDao implementa esas operaciones usando MongoRepository.
+Controller, Service, Dao, Base de Datos
 
-### Singleton
+El Controller recibe las solicitudes del frontend. Luego llama al Service, donde se encuentra la lógica principal del sistema después, el Service utiliza el DAO para guardar o consultar información en MongoDB.
 
-ConexionMongoSingleton representa una configuración única de base de datos.
+Se utilizó el patrón DAO para separar la lógica de acceso a datos de la lógica del sistema. Esto ayuda a mantener el código más ordenado y facilita cambios futuros.
 
-### Observer
+Se implementó el patrón Singleton para manejar una configuración centralizada relacionada con la base de datos. 
 
-Cuando se registra una incidencia, NotificadorIncidencias avisa a los observadores. AlertaMunicipalObserver imprime una alerta en consola.
+Se utilizó el patrón Observer para notificar cuando se registra una nueva incidencia. 
+
+La base de datos utilizada fue MongoDB Atlas, con objetos JSON.
+
+En general, la arquitectura utilizada busca mantener el proyecto simple, entendible y fácil de modificar para fines académicos.
+
