@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reporta Tu Calle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Reporta Tu Calle</h1>
+    <p>Sistema básico para reportar incidencias, nota para profesor:solo tiene una pantalla por cuestiones de tiempo, pero CRUD sí funciona, y sí
+        se gestiona el inicio de sesión
+    </p>
+</header>
+
+<main>
+
+    <section class="caja grande">
+        <h2>Casos de uso implementados</h2>
+
+        <div class="casos">
+            <div class="caso">
+                <h3>CU01 - Registrar usuario</h3>
+                <p>El vecino registra sus datos básicos para usar el sistema.</p>
+            </div>
+
+            <div class="caso">
+                <h3>CU02 - Iniciar sesión</h3>
+                <p>El vecino accede usando correo y contraseña.</p>
+            </div>
+
+            <div class="caso">
+                <h3>CU03 - Registrar incidencia</h3>
+                <p>El usuario reporta baches, basura, alumbrado, seguridad o emergencias con imagen.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="caja">
+        <h2>Registrar usuario</h2>
+
+        <form id="formUsuario">
+            <input id="nombreUsuario" placeholder="Nombre completo" required>
+            <input id="correoUsuario" type="email" placeholder="Correo electrónico" required>
+            <input id="passwordUsuario" type="password" placeholder="Contraseña" required>
+            <button type="submit">Guardar usuario</button>
+        </form>
+
+        <div id="usuarioGuardado"></div>
+    </section>
+
+    <section class="caja">
+        <h2>Iniciar sesión</h2>
+
+        <form id="formLogin">
+            <input id="loginCorreo" type="email" placeholder="Correo electrónico" required>
+            <input id="loginPassword" type="password" placeholder="Contraseña" required>
+            <button type="submit">Ingresar</button>
+        </form>
+
+        <div id="sesionActiva"></div>
+    </section>
+
+    <section class="caja">
+        <h2>Nuevo reporte</h2>
+
+        <form id="formReporte">
+            <input id="titulo" placeholder="Título del problema" required>
+
+            <textarea id="descripcion" placeholder="Descripción" required></textarea>
+
+            <select id="tipo">
+                <option value="BACHE">Bache</option>
+                <option value="ALUMBRADO">Alumbrado</option>
+                <option value="BASURA">Basura</option>
+                <option value="SEGURIDAD">Seguridad ciudadana</option>
+                <option value="EMERGENCIA">Emergencia</option>
+            </select>
+
+            <input id="direccion" placeholder="Dirección o referencia" required>
+
+            <input id="reportante" placeholder="Nombre del vecino" readonly>
+
+            <input id="archivo" type="file" accept="image/*">
+
+            <button type="submit">Guardar reporte</button>
+        </form>
+    </section>
+
+    <section class="caja grande">
+        <h2>Reportes registrados</h2>
+
+        <button onclick="cargarReportes()">Actualizar lista</button>
+
+        <div id="lista"></div>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

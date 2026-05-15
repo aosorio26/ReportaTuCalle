@@ -1,0 +1,16 @@
+C:\Users\Usuario\Desktop\ParcialDS\ReportaTuCalle_simple_funcional\ReportaTuCalle_simple\backend\src\main\java\com\reportatucalle\config\ConexionMongoSingleton.java
+C:\Users\Usuario\Desktop\ParcialDS\ReportaTuCalle_simple_funcional\ReportaTuCalle_simple\backend\src\main\java\com\reportatucalle\controller\IncidenciaController.java
+C:\Users\Usuario\Desktop\ParcialDS\ReportaTuCalle_simple_funcional\ReportaTuCalle_simple\backend\src\main\java\com\reportatucalle\controller\InfoController.java
+C:\Users\Usuario\Desktop\ParcialDS\ReportaTuCalle_simple_funcional\ReportaTuCalle_simple\backend\src\main\java\com\reportatucalle\controller\UsuarioController.java
+C:\Users\Usuario\Desktop\ParcialDS\ReportaTuCalle_simple_funcional\ReportaTuCalle_simple\backend\src\main\java\com\reportatucalle\dao\IncidenciaDao.java
+C:\Users\Usuario\Desktop\ParcialDS\ReportaTuCalle_simple_funcional\ReportaTuCalle_simple\backend\src\main\java\com\reportatucalle\dao\IncidenciaRepository.java
+C:\Users\Usuario\Desktop\ParcialDS\ReportaTuCalle_simple_funcional\ReportaTuCalle_simple\backend\src\main\java\com\reportatucalle\dao\MongoIncidenciaDao.java
+C:\Users\Usuario\Desktop\ParcialDS\ReportaTuCalle_simple_funcional\ReportaTuCalle_simple\backend\src\main\java\com\reportatucalle\dao\UsuarioRepository.java
+C:\Users\Usuario\Desktop\ParcialDS\ReportaTuCalle_simple_funcional\ReportaTuCalle_simple\backend\src\main\java\com\reportatucalle\model\Incidencia.java
+C:\Users\Usuario\Desktop\ParcialDS\ReportaTuCalle_simple_funcional\ReportaTuCalle_simple\backend\src\main\java\com\reportatucalle\model\Usuario.java
+C:\Users\Usuario\Desktop\ParcialDS\ReportaTuCalle_simple_funcional\ReportaTuCalle_simple\backend\src\main\java\com\reportatucalle\observer\AlertaMunicipalObserver.java
+C:\Users\Usuario\Desktop\ParcialDS\ReportaTuCalle_simple_funcional\ReportaTuCalle_simple\backend\src\main\java\com\reportatucalle\observer\IncidenciaObserver.java
+C:\Users\Usuario\Desktop\ParcialDS\ReportaTuCalle_simple_funcional\ReportaTuCalle_simple\backend\src\main\java\com\reportatucalle\ReportaTuCalleApp.java
+C:\Users\Usuario\Desktop\ParcialDS\ReportaTuCalle_simple_funcional\ReportaTuCalle_simple\backend\src\main\java\com\reportatucalle\service\IncidenciaService.java
+C:\Users\Usuario\Desktop\ParcialDS\ReportaTuCalle_simple_funcional\ReportaTuCalle_simple\backend\src\main\java\com\reportatucalle\service\NotificadorIncidencias.java
+C:\Users\Usuario\Desktop\ParcialDS\ReportaTuCalle_simple_funcional\ReportaTuCalle_simple\backend\src\main\java\com\reportatucalle\service\UsuarioService.java

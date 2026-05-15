@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eeeeee;
+    color: #222;
+}
+
+header {
+    background: #2b5c8a;
+    color: white;
+    padding: 18px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+.caja {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 16px;
+    width: calc(50% - 45px);
+}
+
+.grande {
+    width: 100%;
+}
+
+input,
+textarea,
+select,
+button {
+    width: 100%;
+    padding: 9px;
+    margin-top: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    background: #2b5c8a;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #21496f;
+}
+
+.casos {
+    display: flex;
+    gap: 12px;
+}
+
+.caso {
+    border: 1px solid #ddd;
+    background: #f7f7f7;
+    padding: 12px;
+    width: 33%;
+}
+
+.caso h3 {
+    margin-top: 0;
+    color: #2b5c8a;
+}
+
+.reporte {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.estado {
+    font-size: 12px;
+    background: #ddd;
+    padding: 3px 6px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.usuario {
+    margin-top: 12px;
+    border: 1px solid #ddd;
+    background: #f7f7f7;
+    padding: 10px;
+}
+
+.fotoReporte {
+    width: 180px;
+    max-height: 140px;
+    object-fit: cover;
+    display: block;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+}
+
+@media (max-width: 800px) {
+    .caja {
+        width: 100%;
+    }
+
+    .casos {
+        flex-direction: column;
+    }
+
+    .caso {
+        width: auto;
+    }
+}
