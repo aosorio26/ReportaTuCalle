@@ -1,39 +1,29 @@
-# Reporta Tu Calle - versión simple
+# Readme del examen parcial
 
-Proyecto práctico para registrar incidencias en la vía pública: baches, alumbrado, basura, seguridad ciudadana y emergencia.
 
-## Tecnologías
-
+## Tecnologías que se usaron
 - Backend: Java 17, Spring Boot, Maven
 - Base de datos: MongoDB
-- Frontend: HTML, CSS y JavaScript simple
+- Frontend: HTML, CSS y JavaScript simples porque me enfoqué más en los patrones
 - Patrones: DAO, Singleton y Observer
 
-## Ejecutar backend
-
-```bash
+##  Para ejecutar
+Se abre la terminal en la carpeta del proyecto
 cd backend
 mvn clean install
 mvn spring-boot:run
-```
+Debe salir que mongodb está activo
 
-MongoDB local debe estar activo en:
-
-```text
 mongodb://localhost:27017/reportatucalle
-```
 
-## Ejecutar frontend
+## Para el frontend
 
-Abrir en navegador:
+Abrir en navegador con open with live server el siguiente archivo:
 
-```text
 frontend/index.html
-```
 
-## Endpoints principales
+## Lista de endpoints para pruebas
 
-```text
 GET    /api/incidencias
 POST   /api/incidencias
 POST   /api/incidencias/con-archivo
@@ -42,4 +32,4 @@ DELETE /api/incidencias/{id}
 POST   /api/usuarios/registro
 POST   /api/usuarios/login
 GET    /api/info
-```
+
